@@ -1,0 +1,19 @@
+:root {
+    --bg: #eeeeee;
+    --text: #444;
+    --title-text: #2a2a2a;
+    --muted: #6e6e6e;
+    --accent: #3758a4;
+    --card-bg: #f8f8f8;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Inter", sans-serif;
+}
+
+[data-theme="dark"] {
+    --bg: #1a1a1a;
+    --text: #e0e0e0;
+    --title-text: #ffffff;
+    --muted: #a0a0a0;
+    --accent: #6b9eff;
+    --card-bg: #2a2a2a;
+}

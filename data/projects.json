@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "id": "energy-forecast",
+      "title": "Energy Consumption Forecast Model",
+      "description": "SARIMAX time-series forecasting pipeline",
+      "date": "2025-03",
+      "image": "projects/energy-forecast/thumbnail.webp",
+      "githubUrl": "https://github.com/Lucas-Granucci/memphis-energy-forecasting",
+      "tools": ["Python", "SARIMAX", "Pandas", "Scikit-learn"],
+      "markdownDesc": "projects/energy-forecast/description.md"
+    },
+    {
+      "id": "low-resource-ner",
+      "title": "MULTI-NER: Low-resource NLP Framework",
+      "description": "Self-training framework low-resource languages",
+      "date": "2024-06",
+      "image": "projects/low-resource-ner/thumbnail.png",
+      "githubUrl": "https://github.com/Lucas-Granucci/MULTI-NER",
+      "tools": ["Python", "Transformers", "HuggingFace"],
+      "markdownDesc": "projects/low-resource-ner/description.md"
+    }
+  ]
+}

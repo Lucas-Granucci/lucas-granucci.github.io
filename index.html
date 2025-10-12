@@ -5,15 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucas Granucci – Developer Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="/images/circle.svg">
-  </link>
+  <link rel="icon" type="image/x-icon" href="assets/images/circle.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
 </head>
 
 <body>
-  <button class="corner-toggle" onClick="toggleTheme()" title="Toggle Theme">◐</button>
+  <button class="corner-toggle" onClick="theme.toggle()" title="Toggle Theme">◐</button>
+
   <header class="header">
     <h1>Lucas Granucci</h1>
     <p class="muted">CS Student · NLP Technologist · Data Scientist</p>
@@ -34,38 +36,17 @@
   </section>
 
   <section class="section">
-    <h2>Projects</h2>
-
-    <div class="card">
-      <p>
-        <strong><a href="https://github.com/Lucas-Granucci/memphis-energy-forecasting" target="_blank">Energy
-            Consumption Forecast Model</a></strong>
-      </p>
-      <p>
-        SARIMAX time-series forecasting pipeline for predicting electricy
-        consumption using exogenous weather and regional energy data.
-      </p>
+    <h2>Featured Projects</h2>
+    <div id="featured-projects" data-project-ids="energy-forecast,low-resource-ner">
+      <div class="loading">Loading featured projects...</div>
     </div>
-
-    <div class="card">
-      <p>
-        <strong><a href="https://github.com/Lucas-Granucci/MULTI-NER" target="_blank">Low Resource NLP
-            Framework</a></strong>
-      </p>
-      <p>
-        Self-training framework for improving Named Entity Recognition in low-resource languages using transfer learning
-        and data-augmentation via pseudo-labeling.
-      </p>
-    </div>
-
-    <div>
-      <a href="https://github.com/Lucas-Granucci/" target="_blank">See More →</a>
+    <div style="margin-top: 1.5rem;">
+      <a href="projects.html">See All Projects →</a>
     </div>
   </section>
 
   <section class="section">
     <h2>Experience</h2>
-
     <div class="entry">
       <div class="entry-header">
         <strong>Independent Researcher</strong>
@@ -75,12 +56,10 @@
       <p>Conducted self-directed research in computational linguistics. Investigated self-supervised learning approached
         for improving multilingual NLP capabilities.</p>
     </div>
-
   </section>
 
   <section class="section">
     <h2>Education</h2>
-
     <div class="entry">
       <div class="entry-header">
         <strong>Minnetonka High School</strong>
@@ -90,7 +69,6 @@
       <p>Relevant Coursework: AP Computer Science A, EE1301 Computing Systems,
         Science Research (CS Focus), Calculus I-II, AP Statistics</p>
     </div>
-
   </section>
 
   <section class="section">
@@ -100,24 +78,16 @@
       Git, LaTeX
     </p>
   </section>
+
   <footer>
     <p>© 2025 Lucas Granucci. Designed with restraint, built with care.</p>
   </footer>
 
-  <script>
-
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', currentTheme);
-
-    function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    }
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/popup.js"></script>
 </body>
 
 </html>
