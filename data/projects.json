@@ -1,6 +1,16 @@
 {
   "projects": [
     {
+      "id": "tokido",
+      "title": "Tokdio.xyz",
+      "description": "Task/Calendar Management Platform",
+      "date": "2026-01",
+      "image": "projects/tokido/thumbnail.png",
+      "githubUrl": "https://github.com/Lucas-Granucci/tokido",
+      "tools": ["TypeScript", "Tailwind CSS", "JavaScript"],
+      "markdownDesc": "projects/tokido/description.md"
+    },
+    {
       "id": "energy-forecast",
       "title": "Energy Consumption Forecast Model",
       "description": "SARIMAX time-series forecasting pipeline",

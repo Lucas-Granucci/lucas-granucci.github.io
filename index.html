@@ -1,93 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lucas Granucci – Developer Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/circle.svg" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/themes.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/components.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Granucci – Developer Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/circle.svg">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/themes.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-</head>
+    <body>
+        <button
+            class="corner-toggle"
+            onClick="theme.toggle()"
+            title="Toggle Theme"
+        >
+            ◐
+        </button>
 
-<body>
-  <button class="corner-toggle" onClick="theme.toggle()" title="Toggle Theme">◐</button>
+        <header class="header">
+            <h1>Lucas Granucci</h1>
+            <p class="muted">CS Student · NLP Technologist · Data Scientist</p>
+            <p>
+                <a href="mailto:lucasgranucci08@gmail.com" target="_blank"
+                    >lucasgranucci08@gmail.com</a
+                >
+                ·
+                <a href="https://github.com/Lucas-Granucci" target="_blank"
+                    >GitHub</a
+                >
+                ·
+                <a
+                    href="https://www.linkedin.com/in/lucas-granucci/"
+                    target="_blank"
+                    >LinkedIn</a
+                >
+            </p>
+        </header>
 
-  <header class="header">
-    <h1>Lucas Granucci</h1>
-    <p class="muted">CS Student · NLP Technologist · Data Scientist</p>
-    <p>
-      <a href="mailto:lucasgranucci08@gmail.com" target="_blank">lucasgranucci08@gmail.com</a> ·
-      <a href="https://github.com/Lucas-Granucci" target="_blank">GitHub</a> ·
-      <a href="https://www.linkedin.com/in/lucas-granucci/" target="_blank">LinkedIn</a>
-    </p>
-  </header>
+        <section class="section">
+            <h2>About</h2>
+            <p>
+                I'm a student developer focused on machine learning, LLMs, and
+                clean software design. I enjoy building elegant and efficient
+                systems — everything from machine translation pipelines to
+                agentic LLM applications.
+            </p>
+        </section>
 
-  <section class="section">
-    <h2>About</h2>
-    <p>
-      I'm a student developer focused on machine learning, LLMs, and clean
-      software design. I enjoy building elegant and efficient systems — everything from
-      machine translation pipelines to agentic LLM applications.
-    </p>
-  </section>
+        <section class="section">
+            <h2>Featured Projects</h2>
+            <div
+                id="featured-projects"
+                data-project-ids="tokido,low-resource-ner"
+            >
+                <div class="loading">Loading featured projects...</div>
+            </div>
+            <div style="margin-top: 1.5rem">
+                <a href="projects.html">See All Projects →</a>
+            </div>
+        </section>
 
-  <section class="section">
-    <h2>Featured Projects</h2>
-    <div id="featured-projects" data-project-ids="energy-forecast,low-resource-ner">
-      <div class="loading">Loading featured projects...</div>
-    </div>
-    <div style="margin-top: 1.5rem;">
-      <a href="projects.html">See All Projects →</a>
-    </div>
-  </section>
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>Independent Researcher</strong>
+                    <span class="date">Sept 2024 - Jun 2025</span>
+                </div>
+                <div class="entry-sub">Minnetonka, MN</div>
+                <p>
+                    Conducted self-directed research in computational
+                    linguistics. Investigated self-supervised learning
+                    approached for improving multilingual NLP capabilities.
+                </p>
+            </div>
+        </section>
 
-  <section class="section">
-    <h2>Experience</h2>
-    <div class="entry">
-      <div class="entry-header">
-        <strong>Independent Researcher</strong>
-        <span class="date">Sept 2024 - Jun 2025</span>
-      </div>
-      <div class="entry-sub">Minnetonka, MN</div>
-      <p>Conducted self-directed research in computational linguistics. Investigated self-supervised learning approached
-        for improving multilingual NLP capabilities.</p>
-    </div>
-  </section>
+        <section class="section">
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <strong>Minnetonka High School</strong>
+                    <span class="date">Sept 2022 - Present</span>
+                </div>
+                <div class="entry-sub">Minnetonka, MN</div>
+                <p>
+                    Relevant Coursework: AP Computer Science A, EE1301 Computing
+                    Systems, Science Research (CS Focus), Calculus I-II, AP
+                    Statistics
+                </p>
+            </div>
+        </section>
 
-  <section class="section">
-    <h2>Education</h2>
-    <div class="entry">
-      <div class="entry-header">
-        <strong>Minnetonka High School</strong>
-        <span class="date">Sept 2022 - Present</span>
-      </div>
-      <div class="entry-sub">Minnetonka, MN</div>
-      <p>Relevant Coursework: AP Computer Science A, EE1301 Computing Systems,
-        Science Research (CS Focus), Calculus I-II, AP Statistics</p>
-    </div>
-  </section>
+        <section class="section">
+            <h2>Skills</h2>
+            <p>
+                Python, PyTorch, Scikit-learn, Pandas, Transformers, JavaScript,
+                C++, Git, LaTeX
+            </p>
+        </section>
 
-  <section class="section">
-    <h2>Skills</h2>
-    <p>
-      Python, PyTorch, Scikit-learn, Pandas, Transformers, JavaScript, C++,
-      Git, LaTeX
-    </p>
-  </section>
+        <footer>
+            <p>
+                © 2025 Lucas Granucci. Designed with restraint, built with care.
+            </p>
+        </footer>
 
-  <footer>
-    <p>© 2025 Lucas Granucci. Designed with restraint, built with care.</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/projects.js"></script>
-  <script src="assets/js/popup.js"></script>
-</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/projects.js"></script>
+        <script src="assets/js/popup.js"></script>
+    </body>
 </html>
