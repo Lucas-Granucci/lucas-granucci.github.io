@@ -31,7 +31,7 @@
       "markdownDesc": "projects/low-resource-ner/description.md"
     },
     {
-      "id": "scientific-traslation",
+      "id": "scientific-translation",
       "title": "Science Across Languages",
       "description": "Agentic scientific translation framework for low-resource languages",
       "date": "2025-09",
