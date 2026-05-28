@@ -29,6 +29,16 @@
       "githubUrl": "https://github.com/Lucas-Granucci/MULTI-NER",
       "tools": ["Python", "Transformers", "HuggingFace"],
       "markdownDesc": "projects/low-resource-ner/description.md"
+    },
+    {
+      "id": "scientific-traslation",
+      "title": "Science Across Languages",
+      "description": "Agentic scientific translation framework for low-resource languages",
+      "date": "2025-09",
+      "image": "projects/scientific-translation/thumbnail.png",
+      "githubUrl": "https://github.com/Lucas-Granucci/ScienceAcrossLanguages",
+      "tools": ["Python", "LangChain", "OpenAI API"],
+      "markdownDesc": "projects/scientific-translation/description.md"
     }
   ]
 }

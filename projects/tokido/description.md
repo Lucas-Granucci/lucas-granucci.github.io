@@ -4,7 +4,7 @@
 
 A modern, intuitive task management system that helps users organize their work and boost productivity with a clean, responsive interface. 
 
-🔗 **Live at [tokido.xyz](https://tokido.xyz)**
+**Live at [tokido.xyz](https://tokido.xyz)**
 
 ## What I Built
 
