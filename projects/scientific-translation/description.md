@@ -1,4 +1,4 @@
-# Modular Multi-Agent LLM Framework for Scientific Translation in Low-Resource Languages
+# Agentic Framework for Scientific Translation in Low-Resource Languages
 **Research Project** | Natural Language Processing
 
 A modular, agentic large language model (LLM) translation framework with specialized terminology and retrieval agents, incorporating flow-aware and long-range memory management via graph-based document modeling—designed.
