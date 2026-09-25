@@ -1,48 +1,40 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Projects – Lucas Granucci</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/circle.svg" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="assets/css/themes.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/css/components.css" />
-    </head>
-
-    <body>
-        <button
-            class="corner-toggle"
-            onClick="theme.toggle()"
-            title="Toggle Theme"
-        >
-            ◐
-        </button>
-
-        <div style="margin-bottom: 2rem">
-            <a href="index.html">← Back to Home</a>
-        </div>
-
-        <header class="header">
-            <h1>Projects</h1>
+<!DOCTYPE html>
+<html lang="en" class="archive-page">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The complete collection of projects by Lucas Granucci.">
+    <meta name="theme-color" content="#fafafa">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="All projects — Lucas Granucci">
+    <meta property="og:description" content="The complete collection of projects by Lucas Granucci.">
+    <meta name="twitter:card" content="summary">
+    <title>All projects — Lucas Granucci</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <noscript><style>#projects-content, #writing-content { display: none; }</style></noscript>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="bar">
+        <a class="home" href="index.html#top">Lucas Granucci</a>
+        <nav aria-label="Main navigation">
+            <a href="projects.html" aria-current="page">Projects</a>
+            <a href="writing.html">Writing</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </header>
+    <main class="archive-shell" id="main" tabindex="-1">
+        <a class="back-link" href="index.html#projects">← Back to home</a>
+        <header class="archive-header">
+            <h1>All projects</h1>
         </header>
-
-        <section class="section">
-            <div class="projects-grid"></div>
-        </section>
-
-        <footer>
-            <p>© 2026 Lucas Granucci</p>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/theme.js"></script>
-        <script src="assets/js/projects.js"></script>
-        <script src="assets/js/popup.js"></script>
-    </body>
+        <div id="projects-content" aria-live="polite" aria-busy="true"><p>Loading projects…</p></div>
+        <noscript><p>Enable JavaScript to see the full list, or <a href="https://github.com/Lucas-Granucci">browse my work on GitHub</a>.</p></noscript>
+    </main>
+</body>
 </html>

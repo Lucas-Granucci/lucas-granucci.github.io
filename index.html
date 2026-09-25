@@ -1,119 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lucas Granucci – Developer Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/circle.svg" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="assets/css/themes.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/css/components.css" />
-    </head>
-
-    <body>
-        <button
-            class="corner-toggle"
-            onClick="theme.toggle()"
-            title="Toggle Theme"
-        >
-            ◐
-        </button>
-
-        <header class="header">
-            <h1>Lucas Granucci</h1>
-            <p class="muted">CS Student · NLP Technologist · Data Scientist</p>
-            <p>
-                <a href="mailto:lucasgranucci08@gmail.com" target="_blank"
-                    >lucasgranucci08@gmail.com</a
-                >
-                ·
-                <a href="https://github.com/Lucas-Granucci" target="_blank"
-                    >GitHub</a
-                >
-                ·
-                <a
-                    href="https://www.linkedin.com/in/lucas-granucci/"
-                    target="_blank"
-                    >LinkedIn</a
-                >
-            </p>
-        </header>
-
-        <section class="section">
-            <h2>About</h2>
-            <p>
-                I'm a student developer focused on machine learning, LLMs, and
-                clean software design. I enjoy building elegant and efficient
-                systems — everything from machine translation pipelines to
-                agentic LLM applications.
-            </p>
-        </section>
-
-        <section class="section">
-            <h2>Featured Projects</h2>
-            <div
-                id="featured-projects"
-                data-project-ids="tokido,low-resource-ner"
-            >
-                <div class="loading">Loading featured projects...</div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lucas Granucci — computer science at Carnegie Mellon. Projects, writing, and a personal collection of ideas.">
+    <meta name="theme-color" content="#fafafa">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lucas Granucci">
+    <meta property="og:description" content="Projects, writing, and ideas from a computer science student at Carnegie Mellon.">
+    <meta name="twitter:card" content="summary">
+    <title>Lucas Granucci</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <noscript><style>#projects-content, #writing-content { display: none; }</style></noscript>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="bar">
+        <a class="home" href="#top">Lucas Granucci</a>
+        <nav aria-label="Main navigation">
+            <a href="#projects">Projects</a>
+            <a href="#writing">Writing</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+    <main class="container" id="main" tabindex="-1">
+        <section id="top" aria-labelledby="intro-title">
+            <div>
+                <h1 id="intro-title" tabindex="-1">Lucas Granucci</h1>
+                <p class="intro-subtitle">computer science @ carnegie mellon</p>
+                <nav aria-label="Explore">
+                    <ul class="link-list">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#writing">Writing</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div style="margin-top: 1.5rem">
-                <a href="projects.html">See All Projects →</a>
+            <a class="scroll-cue" href="#projects">
+                <span>Scroll to explore</span>
+                <span aria-hidden="true">↓</span>
+            </a>
+        </section>
+        <section id="projects" aria-labelledby="projects-title">
+            <div>
+                <h2 id="projects-title">Projects</h2>
+                <div id="projects-content" data-limit="5" aria-live="polite" aria-busy="true"><p>Loading projects…</p></div>
+                <a class="all-link" href="projects.html">All projects →</a>
+                <noscript><p>Enable JavaScript to see the project list, or <a href="https://github.com/Lucas-Granucci">browse my work on GitHub</a>.</p></noscript>
             </div>
         </section>
-
-        <section class="section">
-            <h2>Experience</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <strong>Independent Researcher</strong>
-                    <span class="date">Sept 2024 - Jun 2025</span>
-                </div>
-                <div class="entry-sub">Minnetonka, MN</div>
-                <p>
-                    Conducted self-directed research in computational
-                    linguistics. Investigated self-supervised learning
-                    approached for improving multilingual NLP capabilities.
-                </p>
+        <section id="writing" aria-labelledby="writing-title">
+            <div>
+                <h2 id="writing-title">Writing</h2>
+                <div id="writing-content" data-limit="5" aria-live="polite" aria-busy="true"><p>Loading writing…</p></div>
+                <a class="all-link" href="writing.html">All writing →</a>
+                <noscript><p>Enable JavaScript to browse posts, or <a href="writing/2026-09-24.md">read the introductory note as plain text</a>.</p></noscript>
             </div>
         </section>
-
-        <section class="section">
-            <h2>Education</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <strong>Minnetonka High School</strong>
-                    <span class="date">Sept 2022 - Present</span>
-                </div>
-                <div class="entry-sub">Minnetonka, MN</div>
-                <p>
-                    Relevant Coursework: AP Computer Science A, EE1301 Computing
-                    Systems, Science Research (CS Focus), Calculus I-II, AP
-                    Statistics
-                </p>
+        <section id="about" aria-labelledby="about-title">
+            <div>
+                <h2 id="about-title">About</h2>
+                <p>I'm a computer science student at Carnegie Mellon with experience in natural language processing research. I like making things and learning. Welcome to my personal knowledge collection.</p>
+                <p lang="fr">Ceci n’est pas un portfolio.</p>
+                <ul class="link-list contact-links">
+                    <li><a href="mailto:lucasgranucci08@gmail.com">lucasgranucci08@gmail.com</a></li>
+                    <li><a href="https://github.com/Lucas-Granucci" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/lucas-granucci/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">LinkedIn</a></li>
+                </ul>
             </div>
         </section>
-
-        <section class="section">
-            <h2>Skills</h2>
-            <p>
-                Python, PyTorch, Scikit-learn, Pandas, Transformers, JavaScript,
-                C++, Git, LaTeX
-            </p>
-        </section>
-
-        <footer>
-            <p>© 2026 Lucas Granucci</p>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/theme.js"></script>
-        <script src="assets/js/projects.js"></script>
-        <script src="assets/js/popup.js"></script>
-    </body>
+    </main>
+</body>
 </html>
