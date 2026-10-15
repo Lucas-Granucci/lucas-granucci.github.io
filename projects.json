@@ -1,50 +1,58 @@
 [
     {
+        "name": "Surreal Estate",
+        "github": "https://github.com/Lucas-Granucci/surreal-estate",
+        "demo": "https://lucas-granucci.github.io/surreal-estate/#home",
+        "desc": "Agentic pipeline for real estate research.",
+        "year": 2026
+    },
+    {
         "name": "Science Across Languages",
-        "url": "https://github.com/Lucas-Granucci/ScienceAcrossLanguages",
+        "github": "https://github.com/Lucas-Granucci/ScienceAcrossLanguages",
+        "demo": null,
         "desc": "A modular, multi-agent LLM framework for scientific document translation, combining discourse graphs, terminology, memory, and retrieval.",
         "year": 2026
     },
     {
-        "name": "RustyVision",
-        "url": "https://github.com/Lucas-Granucci/RustyVision",
-        "desc": "A real-time vision system built from scratch in Rust for FRC Team 3082, with sub-50 ms detection and a live configuration dashboard.",
-        "year": 2026
-    },
-    {
         "name": "Car Wash Analytics App",
-        "url": null,
+        "github": null,
+        "demo": null,
         "desc": "A Swift iOS app and Express.js API giving managers transaction analytics across 65+ car wash locations, with data synced every ten minutes.",
         "year": 2026
     },
     {
-        "name": "Surreal Estate",
-        "url": "https://github.com/Lucas-Granucci/SurrealEstate",
-        "desc": "An agent-based pipeline for real estate research.",
+        "name": "RustyVision",
+        "github": "https://github.com/Lucas-Granucci/RustyVision",
+        "demo": null,
+        "desc": "A real-time vision system built from scratch in Rust for FRC Team 3082, with sub-50 ms detection and a live configuration dashboard.",
         "year": 2026
     },
     {
         "name": "MULTI-NER",
-        "url": "https://github.com/Lucas-Granucci/MULTI-NER",
+        "github": "https://github.com/Lucas-Granucci/MULTI-NER",
+        "demo": null,
         "desc": "A self-training and pseudo-labeling framework for named entity recognition in low-resource languages, improving performance across six language pairs.",
         "year": 2025
     },
     {
         "name": "Tokido",
-        "url": "https://github.com/Lucas-Granucci/tokido",
+        "github": "https://github.com/Lucas-Granucci/tokido",
+        "demo": null,
         "desc": "A TypeScript task and calendar management platform for organizing work, tracking tasks, and managing personal and team productivity.",
         "year": 2025
     },
 
     {
         "name": "3D Volumetric Display",
-        "url": null,
+        "github": null,
+        "demo": null,
         "desc": "A spinning volumetric display with embedded C++ software coordinating ESP32 and Photon 2 microcontrollers over UDP.",
         "year": 2025
     },
     {
         "name": "Energy Consumption Forecast Model",
-        "url": "https://github.com/Lucas-Granucci/memphis-energy-forecasting",
+        "github": "https://github.com/Lucas-Granucci/memphis-energy-forecasting",
+        "demo": null,
         "desc": "A SARIMAX model forecasting Memphis peak power demand using regional electricity data and temperature, achieving 3.19% mean absolute percentage error.",
         "year": 2025
     }

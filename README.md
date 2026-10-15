@@ -10,9 +10,10 @@ the site fetches its JSON indexes and Markdown posts.
 
 ## Content
 
-- Edit `projects.json` to add or update projects. Each entry has a `name`, an
-  HTTP(S) `url` (or `null` when no public link is available), a `desc`, and a `year`.
-  JSON order controls project order;
+- Edit `projects.json` to add or update projects. Each entry has a `name`, a
+  `desc`, a `year`, and optional HTTP(S) `github` and `demo` URLs. Set either link
+  to `null` or omit it when unavailable. The title links to the live demo,
+  with a GitHub icon at the right of the title row when available. JSON order controls project order;
   put featured projects first. Project links open in a new tab.
 - Edit `writing.json` to list posts. Each
   entry has a `title`, a display `date`, and a `fileName` matching a Markdown file
